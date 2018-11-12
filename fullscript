@@ -7,5 +7,5 @@ sudo apt-get install -y linux-image-extra-$(uname -r) linux-image-extra-virtual
 sudo apt-get install -y docker-engine
 sudo service docker start
 
-sudo docker build -t myse https://raw.githubusercontent.com/glotoff/docker/master/myse
+sudo docker build -t myse https://raw.githubusercontent.com/glotoff/docker/master/Dockerfile
 sudo docker run --name mysec -d --cap-add NET_ADMIN -p 5555:5555/tcp -p 443:443/tcp --restart always -e "vpnpwd=sgse15" myse
