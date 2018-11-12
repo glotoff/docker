@@ -1,5 +1,5 @@
 FROM siomiz/softethervpn:ubuntu
-COPY https://raw.githubusercontent.com/glotoff/docker/master/vpn_server.config /usr/vpnserver/
+ADD https://raw.githubusercontent.com/glotoff/docker/master/vpn_server.config /usr/vpnserver/
 EXPOSE 80
 RUN apt-get --assume-yes update
 RUN apt-get --assume-yes install software-properties-common
