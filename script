@@ -8,4 +8,4 @@ sudo apt-get install -y docker-engine
 sudo service docker start
 
 sudo docker build -t myse https://raw.githubusercontent.com/glotoff/docker/master/Dockerfile
-sudo docker run --name mysec -d --cap-add NET_ADMIN -p 5555:5555/tcp -p 443:443/tcp -p 80:80/tcp --restart always -e "vpnpwd=xxx" myse
+sudo docker run --name mysec -d --cap-add NET_ADMIN -p 5555:5555/tcp -p 443:443/tcp -p 80:80/tcp -p 500:500/tcp -p 1701:1701/tcp -p 4500:4500/tcp -p 500:500/tcp --restart always -e "vpnpwd=xxx" myse
